@@ -28,7 +28,7 @@ const persistedTheme = localStorage.getItem('theme');
 
 if (persistedTheme === Theme.DARK) {
   refs.body.classList.add(Theme.DARK);
-  refs.switchInput.setAttribute('checked', 'true');
+  refs.switchInput.checked = true;
 } else {
   refs.body.classList.add(Theme.LIGHT);
 }
